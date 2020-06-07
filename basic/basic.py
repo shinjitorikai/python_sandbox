@@ -23,6 +23,8 @@ print('dicdata = ', dicdata)
 print(' - 要素アクセス key1 : ', dicdata['key1'])
 dicdata['key3'] = 56
 print(' - 要素追加 : ', dicdata)
+dicdata2 = {} # dictionaryの初期化
+print('dicdata2 = ', dicdata2)
 
 # logical calc
 bData1 = True
@@ -31,5 +33,3 @@ print('論理演算')
 print(' - not bData1 : ', not bData1)
 print(' - and bData1 : ', bData1 and bData2)
 print(' - or  bData1 : ', bData1 or bData2)
-
-
