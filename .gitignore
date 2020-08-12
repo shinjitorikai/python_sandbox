@@ -127,3 +127,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+pandas/covid19data/pcr_positive_daily.csv
+pandas/covid19data/pcr_tested_daily.csv
