@@ -121,3 +121,14 @@ print('hstack : ',np.hstack([A6_1,A6_2]))
 print('random = ',np.random.rand(2,3))
 print('random(int) = ',np.random.randint(low=0,high=10,size=(2,3)))
 print('random(normal) = ',np.random.normal(0.5,0.2,(2,3)))
+
+# 配列の統計
+A7 = np.array([0,1,2,3,5])
+print('array sum = ',np.sum(A7))
+print('array mean = ',np.mean(A7))
+print('array average = ',np.average(A7))
+print('array median = ',np.median(A7))
+print('array std = ',np.std(A7))
+print('array var = ',np.var(A7))
+print('array polyfit = ',np.polyfit(range(A7.shape[0]),A7,1)) # 1次
+print('array grad = ',np.gradient(A7))
