@@ -1,5 +1,5 @@
 # ‰¼‘zŠÂ‹«‚ð‹N“®
-C:\Users\stori\.venvs\venv_default\Scripts\Activate.ps1
+~\.venvs\venv_default\Scripts\Activate.ps1
 
 # Jupyter‚ð‹N“®
 jupyter notebook
