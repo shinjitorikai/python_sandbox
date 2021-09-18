@@ -133,3 +133,4 @@ pandas/covid19data/pcr_tested_daily.csv
 # add
 .vscode
 matplotlib/output.svg
+matplotlib/output.pdf
