@@ -6,18 +6,6 @@ print('type = ',type(a))
 print('type = ',type(3.14))
 print('type = ',type("abc"))
 
-# list
-listdata = [1,2,3,4,5]
-print('listdata = ', listdata)
-print(' - type = ', type(listdata))
-print(' - length = ', len(listdata))
-print(' - 要素アクセス a[0] = ', listdata[0])
-print(' - スライシング a[0:2] = ', listdata[0:2]) # 0番目から2番目まで(2番目は含まない)
-print(' - スライシング a[2:] = ', listdata[2:]) # 2番目以降
-print(' - スライシング a[:2] = ', listdata[:2]) # 2番目まで(2番目は含まない)
-print(' - スライシング a[:-1] = ', listdata[:-1]) # 最後から1つ前まで(最後から1つ前は含まない)
-print(' - スライシング a[:-2] = ', listdata[:-2]) # 最後から2つ前まで(最後から2つ前は含まない)
-
 # dictionary
 dicdata = {'key1':12,'key2':34,'key4':78}
 print('dicdata = ', dicdata)
@@ -57,12 +45,6 @@ print('zip(list1,list2) = ',list(list_zip)) # [(1, 'A'), (2, 'B'), (3, 'C')] (�
 r_e = enumerate(list2)
 print('enumerate(list2) = ',r_e)
 print('list(enumerate(list2)) = ',list(r_e))
-
-# リスト内包表記(list)
-tmp1 = [i*2 for i in range(3)]
-print('[i*2 for i in range(3)] = ',tmp1)
-tmp2 = [i for i in range(10) if i%2==0]
-print('[i for i in range(10) if i%2==0] = ',tmp2)
 
 # 集合内包表記(set)
 tmp3 = {i*2 for i in range(3)}
