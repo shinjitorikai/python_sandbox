@@ -1,6 +1,7 @@
-import os
-from pathlib import Path
+import pandas as pd
 from tqdm import tqdm
+from pathlib import Path
+import os
 
 # 設定値
 TARGET_DIR = r'/Users/torikai/Documents/sandbox/python_sandbox'
@@ -10,15 +11,23 @@ OUTPUT_FILENAME = r'./filesystem/output.csv'
 
 def getfilelist(targetdir,pattern,isrecursive):
     p = Path(targetdir)
-
     if isrecursive == True:
         search_pattern = '**/' + pattern
     else:
-        search_pattern = pattern
-    
+        search_pattern = pattern    
     filelist = [str(filename) for filename in list(p.glob(search_pattern))]
-
     return filelist
+
+def getfilelist_df(targetdir,pattern,isrecursive):
+    p = Path(targetdir)
+    if isrecursive == True:
+        search_pattern = '**/' + pattern
+    else:
+        search_pattern = pattern    
+    path_list = [str(filename) for filename in list(p.glob(search_pattern))]
+    fname_list = [os.path.basename(s) for s in path_list]
+    df = pd.DataFrame({'Path':path_list,'FileName':fname_list})
+    return df
 
 def main():
     # ファイル/フォルダを取得
