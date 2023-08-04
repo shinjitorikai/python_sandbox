@@ -136,4 +136,5 @@ filesystem/output.csv
 matplotlib/output.svg
 matplotlib/output.pdf
 numpy/numpy_csv_readwrite_out.csv
+pytorch/output
 qrcode/out
